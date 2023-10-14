@@ -39,6 +39,12 @@ export default function Home() {
         </ul>
       </aside>
 
+      <div className="project">
+        <h1>About Project</h1>
+      </div>
+      <div className="project_f">
+        <img src="img/file.png" />
+      </div>
       <div className="project_web">
         <img src="/img/webdemo.png" />
         <p>

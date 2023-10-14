@@ -39,6 +39,12 @@ export default function Home() {
         </ul>
       </aside>
 
+      <div className="t-project">
+        <h1>About T-Project</h1>
+      </div>
+      <div className="t-project_f">
+        <img src="img/file.png" />
+      </div>
       <div className="t_p1">
         <img src="img/web-t1.png" />
       </div>

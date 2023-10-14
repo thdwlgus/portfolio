@@ -163,6 +163,20 @@ body {
   left: 650px;
   top: 510px;
 }
+
+.project h1 {
+  position: absolute;
+  font-size: 38px;
+  font-weight: bold;
+  top: 160px;
+  left: 320px;
+}
+.project_f {
+  position: absolute;
+  width: 45px;
+  top: 70px;
+  left: o;
+}
 .project_web {
   text-align: center;
   width: 1000px;
@@ -172,6 +186,19 @@ body {
   font-size: 20px;
 }
 
+.t-project h1 {
+  position: absolute;
+  font-size: 38px;
+  font-weight: bold;
+  top: 160px;
+  left: 320px;
+}
+.t-project_f {
+  position: absolute;
+  width: 45px;
+  top: 70px;
+  left: o;
+}
 .t_p1 img {
   text-align: center;
   width: 1000px;
