@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  position: relative;
+}
+
+.home_bg {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+}
+.home_name {
+  font-size: 50px;
+  height: 70px;
+  line-height: 70px;
+}
+
+img {
+  float: left;
+  margin-top: 100px;
+  margin-left: 270px;
+}
+
+.home h1 {
+  position: absolute;
+  font-size: 38px;
+  font-weight: bold;
+  top: 300px;
+  left: 700px;
+}
+.home p {
+  position: absolute;
+  font-size: 30px;
+  top: 380px;
+  left: 700px;
+}
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* 해당 태그의 list-style을 none으로 하는 것으로 ●을 제거한다 */
+  text-align: center;
+}
+
+a {
+  color: inherit; /* 부모 엘리먼트의 값을 물려받는다 */
+  text-decoration: none; /* 해당 태그의 text-decoration 속성을 none 값으로 하는 것으로 밑줄을 제거한다 */
+}
+.side-bar > ul ul {
+  display: none;
+}
+
+/* 사이트의 높이를 5000px로 만들어 스크롤 생성 */
+body {
+  background-color: white;
+}
+
+/* 사이드바의 너비와 높이를 변수를 통해 통제 */
+:root {
+  --side-bar-width: 200px;
+  --side-bar-height: 19vh;
+}
+
+.side-bar {
+  position: fixed; /* 스크롤을 따라오도록 지정 */
+  background-color: rgb(203, 200, 200);
+  width: var(--side-bar-width);
+  min-height: var(
+    --side-bar-height
+  ); /* 사이드바의 높이를 전체 화면 높이의 40%로 지정 */
+  margin-top: calc(
+    (30vh - var(--side-bar-height)) / 2
+  ); /* 사이드바 위와 아래의 마진을 동일하게 지정 */
+}
+
+/* 모든 메뉴의 a에 속성값 부여 */
+.side-bar ul > li > a {
+  display: block;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+.side-bar > ul > li {
+  position: relative;
+}
+
+/* 모든 메뉴가 마우스 인식 시 반응 */
+.side-bar ul > li:hover > a {
+  background-color: rgb(225, 225, 225);
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+/* 1차 메뉴의 항목이 마우스 인식 시에 2차 메뉴 등장 */
+.side-bar > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  background-color: rgb(239, 239, 239);
+  top: 0; /* 2차 메뉴의 상단을 1차 메뉴의 상단에 고정 */
+  left: 100%; /* 2차 메뉴를 1차 메뉴의 너비만큼 이동 */
+  width: 100%; /* 1차 메뉴의 너비를 상속 */
+}
+.side-bar {
+  border-radius: 10px;
+  transform: translate(
+    calc(var(--side-bar-width) * -0.8),
+    0
+  ); /* X축 이동, Y축 고정 */
+  transition: 0.5s;
+}
+
+/* 마우스 인식 시 원래의 위치로 이동 */
+.side-bar:hover {
+  transform: translate(
+    -20px,
+    0
+  ); /* 둥근 모서리의 너비만큼 X축 이동, Y축 고정 */
+}
+
+.profile {
+  width: 270px;
+  margin-left: 50px;
+}
+.profile h1 {
+  position: absolute;
+  font-size: 38px;
+  font-weight: bold;
+  top: 160px;
+  left: 320px;
+}
+.profile_f {
+  position: absolute;
+  width: 45px;
+  top: 70px;
+  left: o;
+}
+.profile_container p {
+  position: absolute;
+  font-size: 32px;
+  left: 650px;
+  top: 270px;
+}
+.profile_container1 p {
+  position: absolute;
+  font-size: 32px;
+  left: 650px;
+  top: 350px;
+}
+.profile_container2 p {
+  position: absolute;
+  font-size: 32px;
+  left: 650px;
+  top: 430px;
+}
+.profile_container3 p {
+  position: absolute;
+  font-size: 32px;
+  left: 650px;
+  top: 510px;
+}
+.project_web {
+  text-align: center;
+  width: 1000px;
+}
+.project_web a {
+  text-align: center;
+  font-size: 20px;
+}
+
+.t_p1 img {
+  text-align: center;
+  width: 1000px;
+}
+.t_p2 img {
+  text-align: center;
+  width: 1000px;
+}
+.t_p3 img {
+  text-align: center;
+  width: 1000px;
+}
+.t_p4 img {
+  text-align: center;
+  width: 1000px;
+}
+.t_p5 img {
+  text-align: center;
+  width: 1000px;
+}
+.t_p6 img {
+  text-align: center;
+  width: 1000px;
+}
